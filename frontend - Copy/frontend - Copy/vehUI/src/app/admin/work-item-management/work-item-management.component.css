@@ -1,0 +1,88 @@
+/* General container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form container styling */
+.form-container, .list-container, .edit-container {
+  background: linear-gradient(to bottom, #eaf4f9, #cce4f7); /* Light blue gradient */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Headings styling */
+h1, h2 {
+  color: #004080; /* Dark blue for headings */
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+  color: #0066cc; /* Medium blue for labels */
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #b3d4fc; /* Light blue border */
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dbe6f0; /* Very light blue border */
+}
+
+th {
+  background-color: #cce4f7; /* Light blue for headers */
+  color: #004080; /* Dark blue text color */
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f8ff; /* Very light blue for alternate rows */
+}
+
+button.delete {
+  background-color: #dc3545; /* Red background for Delete button */
+}
+
+button.delete:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

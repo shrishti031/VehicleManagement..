@@ -1,0 +1,28 @@
+<mat-toolbar class="header">
+  <span>Veer Vehicle Services Ltd.</span>
+  <span class="spacer"></span>
+  <div class="user-info">
+    <div *ngIf="loggedIn">
+      <div class="name">Hi, {{ name }} !!!&nbsp;&nbsp;&nbsp;</div>
+    </div>
+    <button *ngIf="showLogoutButton" mat-raised-button (click)="logout()">LogOut</button>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" class="sidenav" fixedInViewport="false" opened="true">
+    <mat-nav-list>
+      <mat-card>
+        <mat-card-content>
+          <h1>{{ panelName }}</h1>
+        </mat-card-content>
+      </mat-card>
+      <a mat-list-item *ngFor="let item of navItems; trackBy: trackByFunction" [routerLink]="item.link" routerLinkActive="active-link">
+        {{ item.value }}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

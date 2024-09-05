@@ -1,0 +1,21 @@
+
+/* welcome-message.component.css */
+html, body {
+  height: 100%;
+  margin: 5000;
+  font-family: Arial, sans-serif;
+}
+
+.welcome-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5000%;
+  background: url('\veer.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}

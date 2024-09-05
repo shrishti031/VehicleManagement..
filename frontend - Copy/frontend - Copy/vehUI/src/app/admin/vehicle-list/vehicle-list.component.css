@@ -1,0 +1,58 @@
+/* General container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Results Card styling */
+.results-card {
+  background: linear-gradient(to bottom, #eaf4f9, #cce4f7); /* Light blue gradient */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px; /* Add padding inside the results card */
+}
+
+/* Table container styling */
+.table-container {
+  background: linear-gradient(to bottom, #eaf4f9, #cce4f7); /* Light blue gradient */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Circular border styling */
+.circular-border {
+  border: 2px solid #004080; /* Dark blue border */
+  border-radius: 50%; /* Circular border */
+  padding: 20px; /* Spacing inside the border */
+  display: inline-block; /* Inline-block to fit the content */
+}
+
+/* Angular Material table styling */
+.mat-header-cell {
+  background-color: #cce4f7; /* Light blue header background */
+  color: #004080; /* Dark blue text color */
+  font-weight: 600;
+}
+
+.mat-cell {
+  background-color: #fff; /* White background for cells */
+}
+
+.mat-row:nth-child(even) {
+  background-color: #f2f8ff; /* Very light blue for alternate rows */
+}
+
+/* Angular Material button styling */
+.mat-raised-button {
+  background-color: #4b80b8; /* Blue background */
+  color: white;
+  border-radius: 4px;
+}
+
+.mat-raised-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
